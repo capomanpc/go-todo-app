@@ -3,6 +3,7 @@ package config
 import (
 	"log"
 
+	"github.com/capomanpc/go-todo-app/utils"
 	"gopkg.in/go-ini/ini.v1"
 )
 
@@ -18,6 +19,7 @@ var Config ConfigList
 // main関数より前に実行
 func init() {
 	LoadConfig()
+	utils.LoggingSettings()
 }
 
 func LoadConfig() {

@@ -2,7 +2,7 @@ package utils
 
 import (
 	"io"
-
+	"log"
 	"os"
 )
 
@@ -14,6 +14,5 @@ func LoggingSettings(logFile string) {
 
 	multiLogFile := io.MultiWriter(os.Stdout, logfile)
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
-	log.SetPutput(multiLogFile)
-
+	log.SetOutput(multiLogFile)
 }
