@@ -16,21 +16,20 @@ type ConfigList struct {
 
 var Config ConfigList
 
-// main関数より前に実行
 func init() {
 	LoadConfig()
-	utils.LoggingSettings()
+	utils.LoggingSettings(Config.LogFile)
 }
 
 func LoadConfig() {
-	cfg, err := ini.Load("coonfig.ini")
+	cfg, err := ini.Load("config.ini")
 	if err != nil {
 		log.Fatalln(err)
 	}
 	Config = ConfigList{
-		Port:      cfg.Section("web").Key("Port").MustString("8080"),
-		SQLDriver: cfg.Section("web").Key("SQLDriver").String(),
-		DBName:    cfg.Section("web").Key("DBName").String(),
-		LogFile:   cfg.Section("web").Key("Logfile").String(),
+		Port:      cfg.Section("web").Key("port").MustString("8080"),
+		SQLDriver: cfg.Section("db").Key("driver").String(),
+		DBName:    cfg.Section("db").Key("name").String(),
+		LogFile:   cfg.Section("web").Key("logfile").String(),
 	}
 }
