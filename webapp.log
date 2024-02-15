@@ -1,0 +1,4 @@
+2024/02/15 00:55:45 users.go:28: near ")": syntax error
+2024/02/15 20:31:21 users.go:28: no such table: users
+2024/02/15 21:13:24 users.go:28: table users has no column named name
+2024/02/15 21:14:58 users.go:28: table users has no column named name
