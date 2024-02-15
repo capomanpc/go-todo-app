@@ -28,9 +28,10 @@ func init() {
 	}
 
 	// 自動増分、uuidは一意になるように設定
-	cmdU := fmt.Sprintf(`CERATE TABLE IF NOT EXISTS %s(
-		id INTEGER PRIMAARY KEY AUTOINCREMENT,
+	cmdU := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
+		id INTEGER PRIMARY KEY AUTOINCREMENT,
 		uuid STRING NOT NULL UNIQUE,
+		name string,
 		email STRING,
 		password STRING,
 		created_at DATETIME)`, tableNameUser)
