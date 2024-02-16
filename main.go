@@ -9,6 +9,7 @@ import (
 func main() {
 	// log.Println("test")
 	// fmt.Println(models.Db)
+
 	/*
 		u := &models.User{}
 		u.Name = "test"
@@ -17,17 +18,34 @@ func main() {
 		fmt.Println(u)
 
 		u.CreateUser()
+
+		/*
+			u, _ := models.GetUser(1)
+
+			u.Name = "Test2"
+			u.Email = "Test2@example.com"
+			u.UpdateUser()
+			u, _ = models.GetUser(1)
+			fmt.Println(u)
+
+			u.DeleteUser()
+			u, _ = models.GetUser(1)
+			fmt.Println(u)
+
+
+		user, _ := models.GetUser(2)
+		user.CreateTodo("Firt Todo")
 	*/
-	u, _ := models.GetUser(1)
+	/*
+		t, _ := models.GetUser(1)
+		fmt.Println(t)
+	*/
 
-	u.Name = "Test2"
-	u.Email = "Test2@example.com"
-	u.UpdateUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
+	user, _ := models.GetUser(2)
+	user.CreateTodo("Second Todo")
 
-	u.DeleteUser()
-	u, _ = models.GetUser(1)
-	fmt.Println(u)
-
+	todos, _ := models.GetTodos()
+	for _, v := range todos {
+		fmt.Println(v)
+	}
 }
