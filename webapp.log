@@ -3,3 +3,1521 @@
 2024/02/15 21:14:58 users.go:28: table users has no column named name
 2024/02/16 17:50:06 todos.go:23: table todos has no column named createdto_at
 2024/02/16 23:13:40 todos.go:99: near "where": syntax error
+2024/02/26 00:15:20 server.go:3413: http: panic serving [::1]:55221: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff78457dbe0?, 0xc00008c360?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff78466a1d0, 0xc0000a00e0}, {0x7ff7845533e0, 0x7ff784665fa0}, {0xc000027aa8?, 0x0?, 0x7ff7841805a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff78466a1d0?, 0xc0000a00e0?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff7848bf8d0?, {0x7ff78466a1d0?, 0xc0000a00e0?}, 0x7ff78434f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff78410a479?, {0x7ff78466a1d0, 0xc0000a00e0}, 0xc00009c000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff78466a1d0?, 0xc0000a00e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148090, {0x7ff78466a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:20 server.go:3413: http: panic serving [::1]:55222: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff78457dbe0?, 0xc000182330?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff78466a1d0, 0xc0001920e0}, {0x7ff7845533e0, 0x7ff784665fa0}, {0xc00006baa8?, 0x0?, 0x7ff7841805a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff78466a1d0?, 0xc0001920e0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff7848bf8d0?, {0x7ff78466a1d0?, 0xc0001920e0?}, 0x7ff78434f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff78410a479?, {0x7ff78466a1d0, 0xc0001920e0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff78466a1d0?, 0xc0001920e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148120, {0x7ff78466a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:20 server.go:3413: http: panic serving [::1]:55223: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff78457dbe0?, 0xc000182660?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff78466a1d0, 0xc000192380}, {0x7ff7845533e0, 0x7ff784665fa0}, {0xc0001a9aa8?, 0x0?, 0x7ff7841805a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff78466a1d0?, 0xc000192380?}, 0xc0001a9b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff7848bf8d0?, {0x7ff78466a1d0?, 0xc000192380?}, 0x7ff78434f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff78410a479?, {0x7ff78466a1d0, 0xc000192380}, 0xc00018e360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182390?}, {0x7ff78466a1d0?, 0xc000192380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001481b0, {0x7ff78466a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:21 server.go:3413: http: panic serving [::1]:55225: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff78457dbe0?, 0xc000182960?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff78466a1d0, 0xc000192540}, {0x7ff7845533e0, 0x7ff784665fa0}, {0xc00022baa8?, 0x0?, 0x7ff7841805a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff78466a1d0?, 0xc000192540?}, 0xc00022bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff7848bf8d0?, {0x7ff78466a1d0?, 0xc000192540?}, 0x7ff78434f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff78410a479?, {0x7ff78466a1d0, 0xc000192540}, 0xc000232000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00021e090?}, {0x7ff78466a1d0?, 0xc000192540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000222000, {0x7ff78466a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:21 server.go:3413: http: panic serving [::1]:55226: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff78457dbe0?, 0xc000182cf0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff78466a1d0, 0xc000192700}, {0x7ff7845533e0, 0x7ff784665fa0}, {0xc00022baa8?, 0x0?, 0x7ff7841805a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff78466a1d0?, 0xc000192700?}, 0xc00022bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff7848bf8d0?, {0x7ff78466a1d0?, 0xc000192700?}, 0x7ff78434f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff78410a479?, {0x7ff78466a1d0, 0xc000192700}, 0xc00018e900)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182a20?}, {0x7ff78466a1d0?, 0xc000192700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000190360, {0x7ff78466a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:26 server.go:3413: http: panic serving [::1]:55227: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff78457dbe0?, 0xc000182fc0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff78466a1d0, 0xc0001928c0}, {0x7ff7845533e0, 0x7ff784665fa0}, {0xc00006baa8?, 0x0?, 0x7ff7841805a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff78466a1d0?, 0xc0001928c0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff7848bf8d0?, {0x7ff78466a1d0?, 0xc0001928c0?}, 0x7ff78434f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff78410a479?, {0x7ff78466a1d0, 0xc0001928c0}, 0xc000232120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00021e180?}, {0x7ff78466a1d0?, 0xc0001928c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000222090, {0x7ff78466a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:26 server.go:3413: http: panic serving [::1]:55228: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff78457dbe0?, 0xc00021e4b0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff78466a1d0, 0xc00024e000}, {0x7ff7845533e0, 0x7ff784665fa0}, {0xc0001a9aa8?, 0x0?, 0x7ff7841805a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff78466a1d0?, 0xc00024e000?}, 0xc0001a9b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff7848bf8d0?, {0x7ff78466a1d0?, 0xc00024e000?}, 0x7ff78434f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff78410a479?, {0x7ff78466a1d0, 0xc00024e000}, 0xc000232240)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00021e1e0?}, {0x7ff78466a1d0?, 0xc00024e000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000190630, {0x7ff78466a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:41 server.go:3413: http: panic serving [::1]:55231: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff75035dbe0?, 0xc0000902d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff75044a1d0, 0xc00008e0e0}, {0x7ff7503333e0, 0x7ff750445fa0}, {0xc000027aa8?, 0x0?, 0x7ff74ff605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff75044a1d0?, 0xc00008e0e0?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff75069f8d0?, {0x7ff75044a1d0?, 0xc00008e0e0?}, 0x7ff75012f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74feea479?, {0x7ff75044a1d0, 0xc00008e0e0}, 0xc00012a7e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001d440?}, {0x7ff75044a1d0?, 0xc00008e0e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148090, {0x7ff75044a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:42 server.go:3413: http: panic serving [::1]:55232: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff75035dbe0?, 0xc000090600?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff75044a1d0, 0xc00008e380}, {0x7ff7503333e0, 0x7ff750445fa0}, {0xc0000b5aa8?, 0x0?, 0x7ff74ff605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff75044a1d0?, 0xc00008e380?}, 0xc0000b5b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff75069f8d0?, {0x7ff75044a1d0?, 0xc00008e380?}, 0x7ff75012f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74feea479?, {0x7ff75044a1d0, 0xc00008e380}, 0xc000096480)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000090330?}, {0x7ff75044a1d0?, 0xc00008e380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x7ff75044a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:42 server.go:3413: http: panic serving [::1]:55233: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff75035dbe0?, 0xc0000909c0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff75044a1d0, 0xc00008e620}, {0x7ff7503333e0, 0x7ff750445fa0}, {0xc0000b5aa8?, 0x0?, 0x7ff74ff605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff75044a1d0?, 0xc00008e620?}, 0xc0000b5b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff75069f8d0?, {0x7ff75044a1d0?, 0xc00008e620?}, 0x7ff75012f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74feea479?, {0x7ff75044a1d0, 0xc00008e620}, 0xc00012a900)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001d4d0?}, {0x7ff75044a1d0?, 0xc00008e620?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00008c240, {0x7ff75044a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:43 server.go:3413: http: panic serving [::1]:55234: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff75035dbe0?, 0xc00001d7d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff75044a1d0, 0xc00016c000}, {0x7ff7503333e0, 0x7ff750445fa0}, {0xc0000b5aa8?, 0x0?, 0x7ff74ff605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff75044a1d0?, 0xc00016c000?}, 0xc0000b5b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff75069f8d0?, {0x7ff75044a1d0?, 0xc00016c000?}, 0x7ff75012f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74feea479?, {0x7ff75044a1d0, 0xc00016c000}, 0xc000096a20)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000090a80?}, {0x7ff75044a1d0?, 0xc00016c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00008c3f0, {0x7ff75044a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:43 server.go:3413: http: panic serving [::1]:55235: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff75035dbe0?, 0xc00001db60?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff75044a1d0, 0xc00016c1c0}, {0x7ff7503333e0, 0x7ff750445fa0}, {0xc0000b5aa8?, 0x0?, 0x7ff74ff605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff75044a1d0?, 0xc00016c1c0?}, 0xc0000b5b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff75069f8d0?, {0x7ff75044a1d0?, 0xc00016c1c0?}, 0x7ff75012f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff74feea479?, {0x7ff75044a1d0, 0xc00016c1c0}, 0xc00012ac60)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001d890?}, {0x7ff75044a1d0?, 0xc00016c1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148240, {0x7ff75044a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:51 server.go:3413: http: panic serving [::1]:55246: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00001d770?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c000}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000027aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c000?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c000?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c000}, 0xc00012a7e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001d440?}, {0x7ff6c3b4a1d0?, 0xc00016c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148090, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:51 server.go:3413: http: panic serving [::1]:55247: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00001da70?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c1c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009baa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c1c0?}, 0xc00009bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c1c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c1c0}, 0xc0000aa000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e090?}, {0x7ff6c3b4a1d0?, 0xc00016c1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000092000, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:51 server.go:3413: http: panic serving [::1]:55248: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00001de60?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c380}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009baa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c380?}, 0xc00009bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c380?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c380}, 0xc00012b0e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001db90?}, {0x7ff6c3b4a1d0?, 0xc00016c380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148360, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:52 server.go:3413: http: panic serving [::1]:55249: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0002062a0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00021e000}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009baa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00021e000?}, 0xc00009bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00021e000?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00021e000}, 0xc0000aa120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e120?}, {0x7ff6c3b4a1d0?, 0xc00021e000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148510, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:52 server.go:3413: http: panic serving [::1]:55250: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0002065a0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00021e1c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00006baa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00021e1c0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00021e1c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00021e1c0}, 0xc00012b440)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cc000?}, {0x7ff6c3b4a1d0?, 0xc00021e1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001485a0, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:52 server.go:3413: http: panic serving [::1]:55251: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cc390?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c540}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc0001d3aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c540?}, 0xc0001d3b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c540?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c540}, 0xc00012b560)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cc0c0?}, {0x7ff6c3b4a1d0?, 0xc00016c540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148630, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:54 server.go:3413: http: panic serving [::1]:55252: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00008e4b0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc0000c0000}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc0000c0000?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc0000c0000?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc0000c0000}, 0xc00012b8c0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cc3f0?}, {0x7ff6c3b4a1d0?, 0xc0000c0000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000092090, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:54 server.go:3413: http: panic serving [::1]:55253: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0002068d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00021e380}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00021e380?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00021e380?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00021e380}, 0xc0002385a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206600?}, {0x7ff6c3b4a1d0?, 0xc00021e380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000092240, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:55 server.go:3413: http: panic serving [::1]:55254: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cc750?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c700}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c700?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c700?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c700}, 0xc0000aa480)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e570?}, {0x7ff6c3b4a1d0?, 0xc00016c700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000202360, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:55 server.go:3413: http: panic serving [::1]:55255: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cca20?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c8c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009baa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c8c0?}, 0xc00009bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c8c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c8c0}, 0xc00012b9e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cc450?}, {0x7ff6c3b4a1d0?, 0xc00016c8c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000922d0, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:55 server.go:3413: http: panic serving [::1]:55256: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001ccd50?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016ca80}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009baa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016ca80?}, 0xc00009bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016ca80?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016ca80}, 0xc000238900)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206990?}, {0x7ff6c3b4a1d0?, 0xc00016ca80?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148a20, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55257: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cd080?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016cc40}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000099aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016cc40?}, 0xc000099b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016cc40?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016cc40}, 0xc0001fa240)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001ccdb0?}, {0x7ff6c3b4a1d0?, 0xc00016cc40?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002023f0, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55258: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cd350?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016ce00}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016ce00?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016ce00?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016ce00}, 0xc0000aa5a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e630?}, {0x7ff6c3b4a1d0?, 0xc00016ce00?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000202480, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55259: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00008e900?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc0000c01c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc0000c01c0?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc0000c01c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc0000c01c0}, 0xc000238a20)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206ab0?}, {0x7ff6c3b4a1d0?, 0xc0000c01c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148e10, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55260: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00008ec60?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc0000c0380}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc0000c0380?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc0000c0380?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc0000c0380}, 0xc0001fa7e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cd410?}, {0x7ff6c3b4a1d0?, 0xc0000c0380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000092480, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55261: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00008ef90?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc0000c0540}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc0000c0540?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc0000c0540?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc0000c0540}, 0xc000238b40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206b10?}, {0x7ff6c3b4a1d0?, 0xc0000c0540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000092630, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55262: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cd740?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016cfc0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc00009daa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016cfc0?}, 0xc00009db30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016cfc0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016cfc0}, 0xc000238c60)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206b70?}, {0x7ff6c3b4a1d0?, 0xc00016cfc0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000927e0, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55263: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cda10?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016d180}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000099aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016d180?}, 0xc000099b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016d180?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016d180}, 0xc000238d80)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000206bd0?}, {0x7ff6c3b4a1d0?, 0xc00016d180?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148ea0, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:56 server.go:3413: http: panic serving [::1]:55264: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0001cdd40?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016d340}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000099aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016d340?}, 0xc000099b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016d340?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016d340}, 0xc0000aaea0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008f050?}, {0x7ff6c3b4a1d0?, 0xc00016d340?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000149170, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:57 server.go:3413: http: panic serving [::1]:55265: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc000206f00?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00021e540}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc0002a7aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00021e540?}, 0xc0002a7b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00021e540?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00021e540}, 0xc0001fafc0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cdda0?}, {0x7ff6c3b4a1d0?, 0xc00021e540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000202510, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:57 server.go:3413: http: panic serving [::1]:55266: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc0002071d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00021e700}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc0001cfaa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00021e700?}, 0xc0001cfb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00021e700?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00021e700}, 0xc0001fb0e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cde00?}, {0x7ff6c3b4a1d0?, 0xc00021e700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000092870, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:15:57 server.go:3413: http: panic serving [::1]:55267: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc000207500?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00021e8c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc0001cfaa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00021e8c0?}, 0xc0001cfb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00021e8c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00021e8c0}, 0xc0001fb200)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001cde60?}, {0x7ff6c3b4a1d0?, 0xc00021e8c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002027e0, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:16:02 server.go:3413: http: panic serving [::1]:55268: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00042e1b0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016d500}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc0001cfaa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016d500?}, 0xc0001cfb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016d500?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016d500}, 0xc000239560)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000207620?}, {0x7ff6c3b4a1d0?, 0xc00016d500?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000202990, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:16:02 server.go:3413: http: panic serving [::1]:55269: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00042e480?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016d6c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc0002a7aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016d6c0?}, 0xc0002a7b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016d6c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016d6c0}, 0xc000239680)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002076e0?}, {0x7ff6c3b4a1d0?, 0xc00016d6c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000202a20, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:16:02 server.go:3413: http: panic serving [::1]:55270: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00042e810?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016d880}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000069aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016d880?}, 0xc000069b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016d880?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016d880}, 0xc0001fb7a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00042e540?}, {0x7ff6c3b4a1d0?, 0xc00016d880?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000149560, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:16:32 server.go:3413: http: panic serving [::1]:55273: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 99 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00042e300?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c000}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000507aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c000?}, 0xc000507b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c000?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c000}, 0xc0001fa000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000484090?}, {0x7ff6c3b4a1d0?, 0xc00016c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148090, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:16:32 server.go:3413: http: panic serving [::1]:55274: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00042e720?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c1c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000097aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c1c0?}, 0xc000097b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c1c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c1c0}, 0xc00012a240)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e030?}, {0x7ff6c3b4a1d0?, 0xc00016c1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0003b8000, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:16:32 server.go:3413: http: panic serving [::1]:55275: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 85 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00008e450?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc000176000}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000491aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc000176000?}, 0xc000491b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc000176000?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc000176000}, 0xc00012a360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e120?}, {0x7ff6c3b4a1d0?, 0xc000176000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000140000, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:17:32 server.go:3413: http: panic serving [::1]:55277: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 87 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc000484360?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc0004c6000}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000491aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc0004c6000?}, 0xc000491b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc0004c6000?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc0004c6000}, 0xc00012aa20)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e510?}, {0x7ff6c3b4a1d0?, 0xc0004c6000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001401b0, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:17:32 server.go:3413: http: panic serving [::1]:55278: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc000484660?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc0004c61c0}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000507aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc0004c61c0?}, 0xc000507b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc0004c61c0?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc0004c61c0}, 0xc00012ab40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008e5d0?}, {0x7ff6c3b4a1d0?, 0xc0004c61c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000140240, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:17:32 server.go:3413: http: panic serving [::1]:55279: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 102 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6c3a5dbe0?, 0xc00042eae0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6c3b4a1d0, 0xc00016c380}, {0x7ff6c3a333e0, 0x7ff6c3b45fa0}, {0xc000097aa8?, 0x0?, 0x7ff6c36605a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6c3b4a1d0?, 0xc00016c380?}, 0xc000097b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6c3d9f8d0?, {0x7ff6c3b4a1d0?, 0xc00016c380?}, 0x7ff6c382f17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6c35ea479?, {0x7ff6c3b4a1d0, 0xc00016c380}, 0xc0001fa5a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0004846c0?}, {0x7ff6c3b4a1d0?, 0xc00016c380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148360, {0x7ff6c3b4a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:18:48 server.go:3413: http: panic serving [::1]:55290: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72d80dbe0?, 0xc00001c390?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff72d8fa1d0, 0xc0001820e0}, {0x7ff72d7e33e0, 0x7ff72d8f5fa0}, {0xc000027aa8?, 0x0?, 0x7ff72d4105a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff72d8fa1d0?, 0xc0001820e0?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff72db4f8d0?, {0x7ff72d8fa1d0?, 0xc0001820e0?}, 0x7ff72d5df17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72d39a479?, {0x7ff72d8fa1d0, 0xc0001820e0}, 0xc00007e000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001c060?}, {0x7ff72d8fa1d0?, 0xc0001820e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000fa090, {0x7ff72d8fa928, 0xc000089320})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:18:48 server.go:3413: http: panic serving [::1]:55291: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72d80dbe0?, 0xc00001c690?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff72d8fa1d0, 0xc000182380}, {0x7ff72d7e33e0, 0x7ff72d8f5fa0}, {0xc000125aa8?, 0x0?, 0x7ff72d4105a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff72d8fa1d0?, 0xc000182380?}, 0xc000125b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff72db4f8d0?, {0x7ff72d8fa1d0?, 0xc000182380?}, 0x7ff72d5df17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72d39a479?, {0x7ff72d8fa1d0, 0xc000182380}, 0xc0000d47e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000089470?}, {0x7ff72d8fa1d0?, 0xc000182380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000fa120, {0x7ff72d8fa928, 0xc000089320})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:18:48 server.go:3413: http: panic serving [::1]:55292: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72d80dbe0?, 0xc000202300?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff72d8fa1d0, 0xc00020e0e0}, {0x7ff72d7e33e0, 0x7ff72d8f5fa0}, {0xc000125aa8?, 0x0?, 0x7ff72d4105a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff72d8fa1d0?, 0xc00020e0e0?}, 0xc000125b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff72db4f8d0?, {0x7ff72d8fa1d0?, 0xc00020e0e0?}, 0x7ff72d5df17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72d39a479?, {0x7ff72d8fa1d0, 0xc00020e0e0}, 0xc000208000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000202030?}, {0x7ff72d8fa1d0?, 0xc00020e0e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000180240, {0x7ff72d8fa928, 0xc000089320})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:18:49 server.go:3413: http: panic serving [::1]:55293: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72d80dbe0?, 0xc00001ca20?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff72d8fa1d0, 0xc000182540}, {0x7ff72d7e33e0, 0x7ff72d8f5fa0}, {0xc000125aa8?, 0x0?, 0x7ff72d4105a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff72d8fa1d0?, 0xc000182540?}, 0xc000125b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff72db4f8d0?, {0x7ff72d8fa1d0?, 0xc000182540?}, 0x7ff72d5df17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72d39a479?, {0x7ff72d8fa1d0, 0xc000182540}, 0xc000208360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002023c0?}, {0x7ff72d8fa1d0?, 0xc000182540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020c120, {0x7ff72d8fa928, 0xc000089320})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:18:49 server.go:3413: http: panic serving [::1]:55294: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72d80dbe0?, 0xc00001cdb0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff72d8fa1d0, 0xc000182700}, {0x7ff72d7e33e0, 0x7ff72d8f5fa0}, {0xc00006baa8?, 0x0?, 0x7ff72d4105a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff72d8fa1d0?, 0xc000182700?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff72db4f8d0?, {0x7ff72d8fa1d0?, 0xc000182700?}, 0x7ff72d5df17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72d39a479?, {0x7ff72d8fa1d0, 0xc000182700}, 0xc00007eb40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001cae0?}, {0x7ff72d8fa1d0?, 0xc000182700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001803f0, {0x7ff72d8fa928, 0xc000089320})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:18:54 server.go:3413: http: panic serving [::1]:55295: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72d80dbe0?, 0xc000202690?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff72d8fa1d0, 0xc00020e2a0}, {0x7ff72d7e33e0, 0x7ff72d8f5fa0}, {0xc00006baa8?, 0x0?, 0x7ff72d4105a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff72d8fa1d0?, 0xc00020e2a0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff72db4f8d0?, {0x7ff72d8fa1d0?, 0xc00020e2a0?}, 0x7ff72d5df17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72d39a479?, {0x7ff72d8fa1d0, 0xc00020e2a0}, 0xc00007eea0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001ce70?}, {0x7ff72d8fa1d0?, 0xc00020e2a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001805a0, {0x7ff72d8fa928, 0xc000089320})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:18:54 server.go:3413: http: panic serving [::1]:55296: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff72d80dbe0?, 0xc0000897d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff72d8fa1d0, 0xc00012c000}, {0x7ff72d7e33e0, 0x7ff72d8f5fa0}, {0xc000125aa8?, 0x0?, 0x7ff72d4105a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff72d8fa1d0?, 0xc00012c000?}, 0xc000125b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff72db4f8d0?, {0x7ff72d8fa1d0?, 0xc00012c000?}, 0x7ff72d5df17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff72d39a479?, {0x7ff72d8fa1d0, 0xc00012c000}, 0xc0002086c0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000202750?}, {0x7ff72d8fa1d0?, 0xc00012c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020c2d0, {0x7ff72d8fa928, 0xc000089320})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:19:50 server.go:3413: http: panic serving [::1]:55335: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008c360?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a00e0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000027aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a00e0?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a00e0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a00e0}, 0xc00009c000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff74051a1d0?, 0xc0000a00e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148090, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:19:52 server.go:3413: http: panic serving [::1]:55336: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008c660?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a02a0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc00006baa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a02a0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a02a0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a02a0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff74051a1d0?, 0xc0000a02a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148120, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:19:52 server.go:3413: http: panic serving [::1]:55337: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008c930?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a0460}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000203aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a0460?}, 0xc000203b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a0460?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a0460}, 0xc00018e120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182120?}, {0x7ff74051a1d0?, 0xc0000a0460?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196000, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:19:52 server.go:3413: http: panic serving [::1]:55338: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc0001823f0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0001b2000}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000203aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0001b2000?}, 0xc000203b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0001b2000?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0001b2000}, 0xc00009cb40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008ca50?}, {0x7ff74051a1d0?, 0xc0001b2000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009e360, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:19:57 server.go:3413: http: panic serving [::1]:55340: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc0002882a0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc00029c000}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000205aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc00029c000?}, 0xc000205b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc00029c000?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc00029c000}, 0xc00018e5a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182570?}, {0x7ff74051a1d0?, 0xc00029c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196240, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:19:57 server.go:3413: http: panic serving [::1]:55339: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc0002885a0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc00029c1c0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000203aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc00029c1c0?}, 0xc000203b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc00029c1c0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc00029c1c0}, 0xc00018e480)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001824b0?}, {0x7ff74051a1d0?, 0xc00029c1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001961b0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:19:57 server.go:3413: http: panic serving [::1]:55341: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc000288930?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc00029c380}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc0002a3aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc00029c380?}, 0xc0002a3b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc00029c380?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc00029c380}, 0xc0002bc5a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000288660?}, {0x7ff74051a1d0?, 0xc00029c380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001962d0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:07 server.go:3413: http: panic serving [::1]:55342: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008cd20?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a0620}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc0002a3aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a0620?}, 0xc0002a3b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a0620?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a0620}, 0xc0002bca20)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002889f0?}, {0x7ff74051a1d0?, 0xc0000a0620?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000284360, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:07 server.go:3413: http: panic serving [::1]:55343: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008cff0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a07e0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000203aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a07e0?}, 0xc000203b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a07e0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a07e0}, 0xc0002bcb40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000288ab0?}, {0x7ff74051a1d0?, 0xc0000a07e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002843f0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:07 server.go:3413: http: panic serving [::1]:55344: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008d2c0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a09a0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000205aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a09a0?}, 0xc000205b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a09a0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a09a0}, 0xc0002bcc60)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000288b70?}, {0x7ff74051a1d0?, 0xc0000a09a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000284480, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:08 server.go:3413: http: panic serving [::1]:55345: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc000182ab0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0001b21c0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc0002a5aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0001b21c0?}, 0xc0002a5b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0001b21c0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0001b21c0}, 0xc00018e6c0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001826f0?}, {0x7ff74051a1d0?, 0xc0001b21c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196360, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:08 server.go:3413: http: panic serving [::1]:55346: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc000182db0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0001b2380}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000069aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0001b2380?}, 0xc000069b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0001b2380?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0001b2380}, 0xc00018e7e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001827b0?}, {0x7ff74051a1d0?, 0xc0001b2380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001963f0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:08 server.go:3413: http: panic serving [::1]:55347: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008d5f0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a0b60}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000069aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a0b60?}, 0xc000069b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a0b60?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a0b60}, 0xc00009d560)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008d320?}, {0x7ff74051a1d0?, 0xc0000a0b60?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001966c0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:13 server.go:3413: http: panic serving [::1]:55348: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 44 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008d8c0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a0d20}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc0002a5aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a0d20?}, 0xc0002a5b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a0d20?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a0d20}, 0xc00018ed80)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182ed0?}, {0x7ff74051a1d0?, 0xc0000a0d20?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196750, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:13 server.go:3413: http: panic serving [::1]:55349: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008db90?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a0ee0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc000205aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a0ee0?}, 0xc000205b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a0ee0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a0ee0}, 0xc00018eea0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182f90?}, {0x7ff74051a1d0?, 0xc0000a0ee0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001967e0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:13 server.go:3413: http: panic serving [::1]:55350: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc000183320?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0001b2540}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc0001f7aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0001b2540?}, 0xc0001f7b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0001b2540?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0001b2540}, 0xc00018efc0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000183050?}, {0x7ff74051a1d0?, 0xc0001b2540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196870, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:27 server.go:3413: http: panic serving [::1]:55352: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc00008dec0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a10a0}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc00006baa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a10a0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a10a0?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a10a0}, 0xc00009dd40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008dbf0?}, {0x7ff74051a1d0?, 0xc0000a10a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002845a0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:27 server.go:3413: http: panic serving [::1]:55351: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc000418210?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc0000a1260}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc0002a9aa8?, 0x4?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc0000a1260?}, 0xc0002a9b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc0000a1260?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc0000a1260}, 0xc00018f320)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000183380?}, {0x7ff74051a1d0?, 0xc0000a1260?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000284510, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/26 00:20:27 server.go:3413: http: panic serving [::1]:55353: open app/views/templates/public_nuvbar.html: The system cannot find the file specified.
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff74042dbe0?, 0xc000288f60?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff74051a1d0, 0xc00029c540}, {0x7ff7404033e0, 0x7ff740515fa0}, {0xc0002a9aa8?, 0x0?, 0x7ff7400305a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff74051a1d0?, 0xc00029c540?}, 0xc0002a9b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff74076f8d0?, {0x7ff74051a1d0?, 0xc00029c540?}, 0x7ff7401ff17a?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff73ffba479?, {0x7ff74051a1d0, 0xc00029c540}, 0xc0002bcd80)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000288c90?}, {0x7ff74051a1d0?, 0xc00029c540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009ecf0, {0x7ff74051a928, 0xc00001d350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
