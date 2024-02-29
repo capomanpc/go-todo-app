@@ -23,6 +23,7 @@ func StartMainServer() error {
 	http.HandleFunc("/", top)
 	http.HandleFunc("/signup", signup)
 	http.HandleFunc("/login", login)
+	http.HandleFunc("/authenticate", authenticate)
 
 	fmt.Println("http://localhost:8080")
 	return http.ListenAndServe(":"+config.Config.Port, nil)

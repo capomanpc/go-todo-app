@@ -1521,3 +1521,598 @@ net/http.(*conn).serve(0xc00009ecf0, {0x7ff74051a928, 0xc00001d350})
 	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
 created by net/http.(*Server).Serve in goroutine 1
 	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/02/27 20:35:39 main.go:18: near "?": syntax error
+2024/03/01 00:41:44 server.go:3413: http: panic serving [::1]:51684: template: layout.html:12: function "plate" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000900f0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc0000a00e0}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc000027aa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc0000a00e0?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc0000a00e0?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc0000a00e0}, 0xc00009c000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff66b97e7b0?, 0xc0000a00e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148090, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:44 server.go:3413: http: panic serving [::1]:51685: template: layout.html:12: function "plate" not defined
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000901f0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc0000a0380}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc00006baa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc0000a0380?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc0000a0380?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc0000a0380}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff66b97e7b0?, 0xc0000a0380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148120, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:44 server.go:3413: http: panic serving [::1]:51686: template: layout.html:12: function "plate" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000902e0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc0000a0620}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc00006baa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc0000a0620?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc0000a0620?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc0000a0620}, 0xc00018e120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001820c0?}, {0x7ff66b97e7b0?, 0xc0000a0620?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009e240, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:45 server.go:3413: http: panic serving [::1]:51687: template: layout.html:12: function "plate" not defined
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000903e0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc0000a07e0}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc00006baa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc0000a07e0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc0000a07e0?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc0000a07e0}, 0xc00009cb40)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008c900?}, {0x7ff66b97e7b0?, 0xc0000a07e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009e3f0, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:45 server.go:3413: http: panic serving [::1]:51688: template: layout.html:12: function "plate" not defined
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000904d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc0000a09a0}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc000201aa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc0000a09a0?}, 0xc000201b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc0000a09a0?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc0000a09a0}, 0xc00012a7e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001d530?}, {0x7ff66b97e7b0?, 0xc0000a09a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001481b0, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:45 server.go:3413: http: panic serving [::1]:51689: template: layout.html:12: function "plate" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000905d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc0000a0b60}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc000201aa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc0000a0b60?}, 0xc000201b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc0000a0b60?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc0000a0b60}, 0xc00009d320)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008ce40?}, {0x7ff66b97e7b0?, 0xc0000a0b60?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009e6c0, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:50 server.go:3413: http: panic serving [::1]:51691: template: layout.html:12: function "plate" not defined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000224d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc00016c000}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc0001a1aa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc00016c000?}, 0xc0001a1b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc00016c000?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc00016c000}, 0xc00009d680)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008d0e0?}, {0x7ff66b97e7b0?, 0xc00016c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000198000, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:50 server.go:3413: http: panic serving [::1]:51692: template: layout.html:12: function "plate" not defined
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000225c0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc00016c1c0}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc000201aa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc00016c1c0?}, 0xc000201b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc00016c1c0?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc00016c1c0}, 0xc00009d7a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008d1a0?}, {0x7ff66b97e7b0?, 0xc00016c1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009e870, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:41:50 server.go:3413: http: panic serving [::1]:51693: template: layout.html:12: function "plate" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff66b87b240?, 0xc0000906e0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff66b97e7b0, 0xc0000a0d20}, {0x7ff66b8665a0, 0x7ff66b97a580}, {0xc0001a3aa8?, 0x0?, 0x7ff66b4905a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff66b97e7b0?, 0xc0000a0d20?}, 0xc0001a3b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff66bbd78f0?, {0x7ff66b97e7b0?, 0xc0000a0d20?}, 0x7ff66b65f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff66b41a479?, {0x7ff66b97e7b0, 0xc0000a0d20}, 0xc00012ad80)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001da40?}, {0x7ff66b97e7b0?, 0xc0000a0d20?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000198090, {0x7ff66b97ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:04 server.go:3413: http: panic serving [::1]:51720: template: layout.html:12: function "plate" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00008a4a0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc000126000}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000027aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc000126000?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc000126000?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc000126000}, 0xc0000d47e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000089440?}, {0x7ff61325e7b0?, 0xc000126000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000fa090, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:04 server.go:3413: http: panic serving [::1]:51721: template: layout.html:12: function "plate" not defined
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00008a5a0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc0001261c0}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc00006faa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc0001261c0?}, 0xc00006fb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc0001261c0?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc0001261c0}, 0xc000180000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001c0c0?}, {0x7ff61325e7b0?, 0xc0001261c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00007a000, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:04 server.go:3413: http: panic serving [::1]:51722: template: layout.html:12: function "plate" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc000022130?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc00018c000}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc00015faa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc00018c000?}, 0xc00015fb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc00018c000?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc00018c000}, 0xc000180120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001c1b0?}, {0x7ff61325e7b0?, 0xc00018c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00007a090, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:05 server.go:3413: http: panic serving [::1]:51723: template: layout.html:12: function "plate" not defined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00008a690?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc000126380}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000215aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc000126380?}, 0xc000215b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc000126380?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc000126380}, 0xc0001805a0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001c450?}, {0x7ff61325e7b0?, 0xc000126380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020c000, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:05 server.go:3413: http: panic serving [::1]:51724: template: layout.html:12: function "plate" not defined
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00008a790?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc000126540}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000215aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc000126540?}, 0xc000215b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc000126540?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc000126540}, 0xc0000d5320)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000089cb0?}, {0x7ff61325e7b0?, 0xc000126540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000fa480, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:10 server.go:3413: http: panic serving [::1]:51725: template: layout.html:12: function "plate" not defined
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc000022230?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc00018c1c0}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000215aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc00018c1c0?}, 0xc000215b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc00018c1c0?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc00018c1c0}, 0xc0000d5680)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002ae030?}, {0x7ff61325e7b0?, 0xc00018c1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000fa630, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:10 server.go:3413: http: panic serving [::1]:51726: template: layout.html:12: function "plate" not defined
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc000022330?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc00018c380}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000215aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc00018c380?}, 0xc000215b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc00018c380?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc00018c380}, 0xc000180900)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001c7b0?}, {0x7ff61325e7b0?, 0xc00018c380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00007a360, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:18 server.go:3413: http: panic serving [::1]:51727: template: layout.html:12: function "plate" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00008a890?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc000126700}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000163aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc000126700?}, 0xc000163b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc000126700?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc000126700}, 0xc00021c000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002080f0?}, {0x7ff61325e7b0?, 0xc000126700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020c090, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:18 server.go:3413: http: panic serving [::1]:51739: template: layout.html:12: function "plate" not defined
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00021a0e0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc000234000}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000217aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc000234000?}, 0xc000217b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc000234000?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc000234000}, 0xc0000d59e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002ae2d0?}, {0x7ff61325e7b0?, 0xc000234000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020c120, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:48 server.go:3413: http: panic serving [::1]:51740: template: layout.html:12: function "plate" not defined
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00021a1e0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc0002341c0}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000217aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc0002341c0?}, 0xc000217b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc0002341c0?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc0002341c0}, 0xc00021c360)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002084b0?}, {0x7ff61325e7b0?, 0xc0002341c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020c2d0, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:48 server.go:3413: http: panic serving [::1]:51741: template: layout.html:12: function "plate" not defined
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00021a2d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc000234380}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000163aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc000234380?}, 0xc000163b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc000234380?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc000234380}, 0xc0000d5b00)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002ae390?}, {0x7ff61325e7b0?, 0xc000234380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000fa7e0, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:43:48 server.go:3413: http: panic serving [::1]:51742: template: layout.html:12: function "plate" not defined
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff61315b240?, 0xc00021a3d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff61325e7b0, 0xc000234540}, {0x7ff6131465a0, 0x7ff61325a580}, {0xc000163aa8?, 0x0?, 0x7ff612d705a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff61325e7b0?, 0xc000234540?}, 0xc000163b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6134b78f0?, {0x7ff61325e7b0?, 0xc000234540?}, 0x7ff612f3f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff612cfa479?, {0x7ff61325e7b0, 0xc000234540}, 0xc00021c900)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000208a20?}, {0x7ff61325e7b0?, 0xc000234540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00020c5a0, {0x7ff61325ef08, 0xc000089350})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:52:56 server.go:3413: http: panic serving [::1]:51803: template: layout.html:12: function "plate" not defined
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6ff42b240?, 0xc0000900f0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6ff52e7b0, 0xc0000b6000}, {0x7ff6ff4165a0, 0x7ff6ff52a580}, {0xc000027aa8?, 0x0?, 0x7ff6ff0405a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6ff52e7b0?, 0xc0000b6000?}, 0xc000027b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6ff7878f0?, {0x7ff6ff52e7b0?, 0xc0000b6000?}, 0x7ff6ff20f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6fefca479?, {0x7ff6ff52e7b0, 0xc0000b6000}, 0xc00009c000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008c030?}, {0x7ff6ff52e7b0?, 0xc0000b6000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148090, {0x7ff6ff52ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:52:56 server.go:3413: http: panic serving [::1]:51804: template: layout.html:12: function "plate" not defined
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6ff42b240?, 0xc0000901f0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6ff52e7b0, 0xc0000b61c0}, {0x7ff6ff4165a0, 0x7ff6ff52a580}, {0xc00006baa8?, 0x0?, 0x7ff6ff0405a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6ff52e7b0?, 0xc0000b61c0?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6ff7878f0?, {0x7ff6ff52e7b0?, 0xc0000b61c0?}, 0x7ff6ff20f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6fefca479?, {0x7ff6ff52e7b0, 0xc0000b61c0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x7ff6ff52e7b0?, 0xc0000b61c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000148120, {0x7ff6ff52ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:52:56 server.go:3413: http: panic serving [::1]:51805: template: layout.html:12: function "plate" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6ff42b240?, 0xc0000902e0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6ff52e7b0, 0xc0000b6380}, {0x7ff6ff4165a0, 0x7ff6ff52a580}, {0xc00006baa8?, 0x0?, 0x7ff6ff0405a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6ff52e7b0?, 0xc0000b6380?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6ff7878f0?, {0x7ff6ff52e7b0?, 0xc0000b6380?}, 0x7ff6ff20f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6fefca479?, {0x7ff6ff52e7b0, 0xc0000b6380}, 0xc00018e120)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001820c0?}, {0x7ff6ff52e7b0?, 0xc0000b6380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009e240, {0x7ff6ff52ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:52:57 server.go:3413: http: panic serving [::1]:51806: template: layout.html:12: function "plate" not defined
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6ff42b240?, 0xc0001860f0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6ff52e7b0, 0xc0001a6000}, {0x7ff6ff4165a0, 0x7ff6ff52a580}, {0xc00006baa8?, 0x0?, 0x7ff6ff0405a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6ff52e7b0?, 0xc0001a6000?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6ff7878f0?, {0x7ff6ff52e7b0?, 0xc0001a6000?}, 0x7ff6ff20f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6fefca479?, {0x7ff6ff52e7b0, 0xc0001a6000}, 0xc00012a7e0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00001d4d0?}, {0x7ff6ff52e7b0?, 0xc0001a6000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009e3f0, {0x7ff6ff52ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:52:57 server.go:3413: http: panic serving [::1]:51807: template: layout.html:12: function "plate" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6ff42b240?, 0xc0000903d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6ff52e7b0, 0xc0000b6540}, {0x7ff6ff4165a0, 0x7ff6ff52a580}, {0xc00006baa8?, 0x0?, 0x7ff6ff0405a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6ff52e7b0?, 0xc0000b6540?}, 0xc00006bb30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6ff7878f0?, {0x7ff6ff52e7b0?, 0xc0000b6540?}, 0x7ff6ff20f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6fefca479?, {0x7ff6ff52e7b0, 0xc0000b6540}, 0xc00018e480)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001823c0?}, {0x7ff6ff52e7b0?, 0xc0000b6540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000190120, {0x7ff6ff52ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/01 00:52:57 server.go:3413: http: panic serving [::1]:51808: template: layout.html:12: function "plate" not defined
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff6ff42b240?, 0xc0000904d0?})
+	C:/Program Files/Go/src/runtime/panic.go:770 +0x132
+text/template.Must(...)
+	C:/Program Files/Go/src/text/template/helper.go:26
+github.com/capomanpc/go-todo-app/app/controllers.generateHTML({0x7ff6ff52e7b0, 0xc0000b6700}, {0x7ff6ff4165a0, 0x7ff6ff52a580}, {0xc000203aa8?, 0x0?, 0x7ff6ff0405a0?})
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:16 +0x23a
+github.com/capomanpc/go-todo-app/app/controllers.top({0x7ff6ff52e7b0?, 0xc0000b6700?}, 0xc000203b30?)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/route_main.go:8 +0x91
+net/http.HandlerFunc.ServeHTTP(0x7ff6ff7878f0?, {0x7ff6ff52e7b0?, 0xc0000b6700?}, 0x7ff6ff20f6da?)
+	C:/Program Files/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff6fefca479?, {0x7ff6ff52e7b0, 0xc0000b6700}, 0xc00009cea0)
+	C:/Program Files/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00008cb40?}, {0x7ff6ff52e7b0?, 0xc0000b6700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001901b0, {0x7ff6ff52ef08, 0xc00001d380})
+	C:/Program Files/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3285 +0x4b4
