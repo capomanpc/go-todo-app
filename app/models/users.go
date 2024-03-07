@@ -21,6 +21,7 @@ type Session struct {
 	CreatedAt time.Time
 }
 
+// ユーザーを作成
 func (u *User) CreateUser() (err error) {
 	cmd := `insert into users(
 		uuid,
