@@ -2133,3 +2133,163 @@ created by net/http.(*Server).Serve in goroutine 1
 2024/03/07 23:18:54 route_main.go:55: near "from": syntax error
 2024/03/07 23:18:54 route_main.go:26: near "from": syntax error
 2024/03/07 23:18:54 route_main.go:26: near "from": syntax error
+2024/03/09 18:34:04 route_main.go:28: near "from": syntax error
+2024/03/09 18:34:04 route_main.go:28: near "from": syntax error
+2024/03/09 18:34:08 route_main.go:28: near "from": syntax error
+2024/03/09 18:34:08 route_main.go:28: near "from": syntax error
+2024/03/09 18:34:10 route_main.go:28: near "from": syntax error
+2024/03/09 18:34:10 route_main.go:28: near "from": syntax error
+2024/03/09 18:34:11 route_main.go:74: near "from": syntax error
+2024/03/09 18:34:11 route_main.go:28: near "from": syntax error
+2024/03/09 18:34:18 server.go:3413: http: panic serving [::1]:50537: runtime error: index out of range [2] with length 0
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc000013050?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc0001489a0}, 0xc00016c900)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc0001489a0?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc0001489a0}, 0xc00016c900)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc0001489a0?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208090, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:34:18 server.go:3413: http: panic serving [::1]:50533: runtime error: index out of range [2] with length 0
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc0000130e0?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc000148b60}, 0xc00016ca20)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc000148b60?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc000148b60}, 0xc00016ca20)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc000148b60?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009a090, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:34:18 server.go:3413: http: panic serving [::1]:50535: runtime error: index out of range [2] with length 0
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc000013170?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc000148d20}, 0xc00016cb40)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc000148d20?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc000148d20}, 0xc00016cb40)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc000148d20?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196120, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:34:18 server.go:3413: http: panic serving [::1]:50536: runtime error: index out of range [2] with length 0
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc000013200?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc000148ee0}, 0xc00016cc60)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc000148ee0?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc000148ee0}, 0xc00016cc60)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc000148ee0?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208000, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:34:18 server.go:3413: http: panic serving [::1]:50546: runtime error: index out of range [2] with length 0
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc000013290?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc0001490a0}, 0xc0002e2b40)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc0001490a0?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc0001490a0}, 0xc0002e2b40)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc0001490a0?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000146990, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:34:37 route_main.go:28: near "from": syntax error
+2024/03/09 18:35:31 server.go:3413: http: panic serving [::1]:50550: runtime error: index out of range [2] with length 0
+goroutine 85 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc0000133b0?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc000149500}, 0xc00016d7a0)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc000149500?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc000149500}, 0xc00016d7a0)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc000149500?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000146b40, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:35:31 server.go:3413: http: panic serving [::1]:50551: runtime error: index out of range [2] with length 0
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc000013440?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc0001496c0}, 0xc00016cea0)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc0001496c0?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc0001496c0}, 0xc00016cea0)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc0001496c0?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00009b200, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:35:31 server.go:3413: http: panic serving [::1]:50557: runtime error: index out of range [2] with length 0
+goroutine 89 [running]:
+net/http.(*conn).serve.func1()
+	C:/lang/Go/src/net/http/server.go:1898 +0xbe
+panic({0x7ff64808f540?, 0xc0000134d0?})
+	C:/lang/Go/src/runtime/panic.go:770 +0x132
+github.com/capomanpc/go-todo-app/app/controllers.StartMainServer.parseURL.func3({0x7ff6481524b0, 0xc000149880}, 0xc0003a90e0)
+	C:/Users/capom/go/src/go-todo-app/app/controllers/server.go:42 +0xdc
+net/http.HandlerFunc.ServeHTTP(0x7ff6483ab8f0?, {0x7ff6481524b0?, 0xc000149880?}, 0x10?)
+	C:/lang/Go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x7ff647b93065?, {0x7ff6481524b0, 0xc000149880}, 0xc0003a90e0)
+	C:/lang/Go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0x7ff648151490?}, {0x7ff6481524b0?, 0xc000149880?}, 0x6?)
+	C:/lang/Go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000146f30, {0x7ff648152c08, 0xc00009ca20})
+	C:/lang/Go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	C:/lang/Go/src/net/http/server.go:3285 +0x4b4
+2024/03/09 18:35:32 route_main.go:28: near "from": syntax error
+2024/03/09 18:36:52 route_main.go:28: near "from": syntax error
+2024/03/09 18:36:52 route_main.go:28: near "from": syntax error
+2024/03/09 18:36:56 route_main.go:74: near "from": syntax error
+2024/03/09 18:36:56 route_main.go:28: near "from": syntax error
+2024/03/09 18:37:03 route_main.go:95: near "from": syntax error
+2024/03/09 18:37:03 route_main.go:28: near "from": syntax error
